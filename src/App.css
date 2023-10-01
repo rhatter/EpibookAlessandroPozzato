@@ -1,0 +1,15 @@
+.spinnerArea {
+  width: 100vw;
+  pointer-events: none;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+  object-fit: cover;
+  height: 60vh;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.spinnerArea div {
+  margin: 1rem;
+}

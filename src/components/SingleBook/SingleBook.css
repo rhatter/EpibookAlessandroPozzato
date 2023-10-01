@@ -1,0 +1,111 @@
+.cardEl .price {
+  text-align: right;
+
+  height: 40%;
+}
+.cardEl img {
+  aspect-ratio: 4/5;
+  object-fit: contain;
+}
+.cardEl {
+  margin: 0rem 0;
+  border: none !important;
+  position: relative;
+}
+
+.selected {
+  border: 1rem solid red;
+}
+.card-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 4.6rem;
+}
+
+.card-body {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.seeComment button {
+  border: none;
+  color: white;
+  font-family: sans-serif;
+  background: darkred;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.3rem 0.8rem;
+  text-align: center;
+  font-feature-settings: "pcap", "c2pc";
+  font-variant-caps: all-petite-caps;
+  width: 100%;
+}
+
+.card-body {
+  padding: 0rem 1rem !important;
+}
+
+.price span {
+  color: white;
+}
+.trianglePrice {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  right: 0;
+}
+.trianglePrice {
+  height: 14%;
+  width: 150%;
+}
+
+.cardEl .price {
+  font-size: 1.6vw;
+}
+
+@media only screen and (max-width: 1200px) {
+  .trianglePrice {
+    height: 14%;
+    width: 28rem;
+  }
+  .cardEl .price {
+    font-size: 2.1vw;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .trianglePrice {
+    height: 14%;
+    width: 25rem;
+  }
+  .cardEl .price {
+    font-size: 2.8vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cardEl .price {
+    font-size: 5vw;
+  }
+}
+@media only screen and (max-width: 576px) {
+}
+
+.goToCommentArea {
+  z-index: 1;
+}
+
+.priceArea {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 0rem 0.5rem !important;
+}
+
+.cardArea {
+  display: flex;
+  flex-flow: column;
+  margin: 3rem 0rem;
+}

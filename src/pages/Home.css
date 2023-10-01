@@ -1,0 +1,62 @@
+.usableArea {
+  display: flex;
+  flex-flow: row;
+}
+
+.usableArea > :nth-child(1) {
+  transition: 0.3s ease;
+  width: 100%;
+}
+.usableArea > :nth-child(2) {
+  width: 0%;
+  transition: width 0.3s ease;
+  visibility: hidden;
+  overflow: hidden;
+  margin-top: 2rem;
+  position: sticky;
+  height: fit-content;
+  top: 9rem;
+}
+
+.usableArea > :nth-child(2).visible {
+  width: 30%;
+}
+
+.commentAreaReading > .head > p.noComment {
+}
+
+@media only screen and (max-width: 1200px) {
+  .usableArea > :nth-child(2).visible {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .usableArea > :nth-child(2).visible {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .usableArea > :nth-child(2).visible {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 576px) {
+}
+
+.Error {
+  padding: 2rem;
+  font-size: 2rem;
+  text-shadow: 0 2px 3px black;
+  font-weight: 500;
+}
+
+.errorarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 106px);
+  background-image: url("https://images.pexels.com/photos/2739010/pexels-photo-2739010.jpeg");
+  background-size: cover;
+  color: white;
+  background-position: center;
+}

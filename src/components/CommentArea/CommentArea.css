@@ -1,0 +1,121 @@
+.commentAreaInput > textarea {
+  resize: none;
+  width: 100%;
+  border: none;
+  padding: 1rem;
+}
+
+.commentAreaInput > textarea:focus-visible {
+  outline: none;
+  background: rgb(255, 248, 239);
+}
+.commentAreaInput > .buttonArea {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.commentAreaInput .buttonArea > button,
+.goToCommentArea > button,
+.goToDetailsArea > button {
+  border: none;
+  color: white;
+  font-family: sans-serif;
+  background: darkred;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.3rem 0.8rem;
+  text-align: center;
+  font-variant-caps: all-petite-caps;
+  width: 100%;
+  border-top: solid 1px white;
+}
+.commentAreaInput > .buttonArea :nth-child(1) {
+  background-color: antiquewhite;
+  color: brown !important;
+}
+.commentAreaInput {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: end;
+  height: 100%;
+}
+.commentAreaReading .commentHead p {
+  text-align: left;
+  font-size: 0.9rem;
+  margin-block-end: 0;
+}
+
+.commentAreaReading .commentHead {
+  border-bottom: 1px solid grey;
+}
+.commentAreaReading :last-child .commentHead {
+  border-bottom: none;
+}
+.commentHead :first-child {
+}
+div .commentHead :last-child {
+  color: darkred;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: right;
+  font-size: 0.6rem;
+}
+.commentBox {
+  margin: 1rem 0;
+}
+.commentAreaReading {
+  padding: 1rem 1rem;
+}
+
+.commentAreaReading > .head > p {
+  text-align: left;
+  font-size: 1.4rem;
+  margin-block-end: 0;
+  font-weight: 600;
+}
+
+.pino {
+  font-weight: 100;
+}
+
+.commentAreaInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.seeComment {
+  border-top: 1px solid white;
+}
+
+.commentAreaInput .stars svg {
+  color: darkred;
+}
+
+.commentAreaInput .stars {
+  padding: 1rem;
+  border-bottom: solid grey 1px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.commentAreaReading > .head > p.noComment {
+}
+
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 576px) {
+  .commentAreaInput .buttonArea > button,
+  .goToCommentArea > button,
+  .goToDetailsArea > button {
+  }
+}

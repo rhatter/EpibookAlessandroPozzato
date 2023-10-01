@@ -1,0 +1,48 @@
+.detailedSingleBookCard img {
+  object-fit: cover;
+  width: 100%;
+}
+.detailedSingleBookArea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 85vh;
+  align-content: center;
+}
+
+.detailedSingleBookArea > div {
+  transition: 0.3s ease;
+}
+
+.detailedSingleBookCard {
+  margin-top: 2rem;
+}
+
+.detailedSingleBookCard .title {
+  background: darkred;
+  padding: 1.5rem;
+  color: white;
+  font-size: 1.2rem;
+  border-top: 1px solid white;
+  margin-block-end: 0;
+}
+
+.mediumRating {
+  text-align: right;
+  font-size: 1.6rem;
+  font-weight: bold;
+
+  margin-block-start: 0;
+}
+
+.detailedPriceArea {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.detailedSingleBookCard {
+  width: 100%;
+}

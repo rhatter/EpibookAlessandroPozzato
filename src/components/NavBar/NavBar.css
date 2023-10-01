@@ -1,0 +1,52 @@
+.NavBar img {
+  height: 80px;
+  border-radius: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+.NavBar {
+  justify-content: center;
+}
+
+.searchMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://images.pexels.com/photos/18093085/pexels-photo-18093085/free-photo-of-books-in-a-suitcase.jpeg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.searchMain::before {
+  background-color: rgba(66, 9, 9, 0.341);
+  height: 100px;
+  width: 100%;
+  display: block;
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+.searchArea .mainCaption {
+  color: white;
+  z-index: 1;
+  font-weight: 500;
+  text-shadow: 1px 1px black;
+}
+
+.searchMain {
+  position: sticky;
+  top: -205px;
+  box-shadow: 0 10px 20px 10px #0000003d;
+  z-index: 3;
+}
+.input-group {
+  position: sticky;
+  top: 51px;
+}
+
+.navbar {
+  z-index: 4;
+}
